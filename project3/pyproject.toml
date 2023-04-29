@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "project3"
+version = "0.1.0"
+description = ""
+authors = ["Павел <sotnikov.pavel.91@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytz = "^2023.3"
+Django = "4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+say-welcome = "project3.cli:welcome"
